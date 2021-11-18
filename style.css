@@ -8,6 +8,7 @@ body {
 .mini {
     width: 200px;
     height: 200px;
+    box-sizing: border-box;
     border-radius: 20px;
     border: 8px solid #3882F6;
 }
@@ -18,6 +19,7 @@ body {
 
 button {
     background-color: #3882F6;
+    box-sizing: border-box;
     border-radius: 8px;
     color: #F9FAF8;
     font-size: 18px;
@@ -65,7 +67,7 @@ ul {
     gap: 20px;
 }
 
-.logo, h1 {
+.logo, h1, h3 {
     color: #F9FAF8;
 }
 
@@ -78,10 +80,9 @@ h2 {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
-}
-
-h3 {
-    color: #F9FAF8;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 .quote {
@@ -96,7 +97,84 @@ h3 {
     font-size: 18px;
 }
 
+.header, .section1, .section2, .section3, .section4-bg, .footer {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
 .header {
     justify-content: space-between;
-    padding: 10px 50px;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.section1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.section1 p {
+    margin-top: -15px;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 {
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.s2-card {
+    width: 200px;
+}
+
+.s2-card p {
+    text-align: justify;
+    text-align-last: center;
+    margin: 0;
+}
+
+.section3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s3-card {
+    width: fit-content;
+    text-align: center;
+    text-align-last: right;
+}
+
+.section4 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex: 1 1 auto; /* not sure if right... */
+}
+
+.section4-bg{
+    padding: 100px 80px;
+}
+
+.footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
