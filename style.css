@@ -1,3 +1,5 @@
+/* The Landing Page is broken into 6 different sections: header, 4 middle sections, and footer */
+
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@ body {
     height: 200px;
     box-sizing: border-box;
     border-radius: 20px;
-    border: 8px solid #3882F6;
+    border: 5px solid #3882F6;
 }
 
 .hero {
@@ -24,7 +26,10 @@ button {
     color: #F9FAF8;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px 25px;
+    width: 125px;
+    height: 48px;
+    text-align: center;
+    transition: font-size 0.5s ease-in-out;
 }
 
 .section1 button {
@@ -64,7 +69,7 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .logo, h1, h3 {
@@ -89,11 +94,13 @@ h2 {
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
+    font-family: 'Roboto', arial;
     color: #1F2937;
 }
 
 .author {
     font-weight: bold;
+    font-family: 'Roboto', arial;
     font-size: 18px;
 }
 
@@ -126,6 +133,7 @@ h2 {
     gap: 25px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .section2 {
@@ -164,10 +172,11 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    flex: 1 1 auto; /* not sure if right... */
+    flex: 1 1 auto;
+    /* not sure if right... */
 }
 
-.section4-bg{
+.section4-bg {
     padding: 100px 80px;
 }
 
@@ -177,4 +186,19 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section1 button:hover {
+    border: 3px solid #F9FAF8;
+}
+
+.section4 button:hover {
+    border: 3px solid #3882F6;
+}
+
+button:hover {
+    background-color: #F9FAF8;
+    color: #3882F6;
+    cursor: pointer;
+    font-size: larger;
 }
